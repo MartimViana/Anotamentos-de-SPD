@@ -1,0 +1,58 @@
+## INTRODUÇÃO AO PROCESSAMENTO PARALELO
+
+Praticamente todos os computadores paralelos de propósito geral são de classe MIMD.
+
+# Computadores ou sistemas com memória distribuída (DMM)
+	- São formados por diversos elementos de processamento chamados nós e por uma rede de interligação entre os nós.
+
+	- Um nó consiste num processador, memória local e, ás vezes, periféricos.
+
+# Computadores com memória partilhada (SMMs)
+	- São formados por vários processadores, uma memória partilhada e uma rede de interligação dos processadores com a memória.
+
+	- O modelo de programação normalmente usado em SMMs é o uso de variáveis partilhadas e programação multitarefa.
+
+	- A escalabilidade de uma máquina de memória partilhada é técnicamente difícil, particularmente acima de algumas dezenhas de processadores (As tarafas "atrapalham-se umas com as outras").
+
+# Cache e hierarquia de memória
+
+	- Uma característica significativa do desenvolvimento de hardware das últimas décadas tem sido a clivagem entre o tempo de ciclo do processador e o tempo de acesso à memória principal.
+
+	- A cache contém uma cópia de um subconjunto dos dados da memória principal.
+
+	- A ordem pela qual os acessos à memória ocorrem num programa podem ter uma influência significativa no desempenho. Nese contexto, a localidade dos acessos a memória é frequentemente usado na caracterização.
+
+# Modelos de consistência
+	- Estes modelos especificam formalmente a forma como a memória é apresentada ao programador.
+
+	- Impõe restrições aos valores que podem resultar de uma operação de leitura num espaço de memória partilhada
+
+Consistência sequencial - Se os acessos á memória de cada processador são feitos de acordo com o seu programa e o resultado global dos acessos de memória de todos os processadores tenham a mesma ordem sequencial que poderia resultar de um encadeamento arbitrário dos acessos á memória dos diferentes processadores.
+(Verifica se todos os processadores estão a par das variáveis globais [se já leram e/ou escreveram, por exemplo]).
+
+# Divisão de trabalho
+Em SIMD, as instruções são executadas de forma síncrona.
+
+Em SPMD, os programas funcionam de forma assíncrona, com operações de sincronização explícitas.
+
+Master-slave: Um dos fluxos é responsável pelo controlo da execução dos demais
+
+Client-Server: Multiplas threads clientes geram pedidos a um servidor e depois processam a resposta obtida.
+
+Pipelining: Elementos de dados são encaminhados de uma etapa para outra na execução de diferentes passos.
+
+Task pool: A estrutura de dados armazena as tarefas a serem executadas.
+
+Produtor-consumidor: Este padrão considera duas atividades distintas e a transferência de dados dirigida do produtor para o consumidor.
+
+# Comunicação
+Modelos de passagem de mensagem:
+{
+	Comunicação ponto-a-ponto
+	Difusão
+}
+-----------
+broadcast: (Envio a mensagem para todos os elementos da rede)
+multicast: (Envio a mensagem para todos de uma subrede)
+-----------
+# NOTA: Distinguir broadcast de multicast.
