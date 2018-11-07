@@ -1,0 +1,2 @@
+Caching - Armazenamento provisório dos resultados.
+Latência - Tempo de transmissão de uma mensagem de tamanho 0.

@@ -16,7 +16,7 @@ Praticamente todos os computadores paralelos de propósito geral são de classe MI
 
 # Cache e hierarquia de memória
 
-	- Uma característica significativa do desenvolvimento de hardware das últimas décadas tem sido a clivagem entre o tempo de ciclo do processador e o tempo de acesso à memória principal.
+	- Uma característica significativa do desenvolvimento de hardware das últimas décadas tem sido a clivagem entre o tempo de ciclo do processador e o tempo de acesso à memória principal.w
 
 	- A cache contém uma cópia de um subconjunto dos dados da memória principal.
 
@@ -35,15 +35,15 @@ Em SIMD, as instruções são executadas de forma síncrona.
 
 Em SPMD, os programas funcionam de forma assíncrona, com operações de sincronização explícitas.
 
-Master-slave: Um dos fluxos é responsável pelo controlo da execução dos demais
+	- Master-slave: Um dos fluxos é responsável pelo controlo da execução dos demais
 
-Client-Server: Multiplas threads clientes geram pedidos a um servidor e depois processam a resposta obtida.
+	- Client-Server: Multiplas threads clientes geram pedidos a um servidor e depois processam a resposta obtida.
 
-Pipelining: Elementos de dados são encaminhados de uma etapa para outra na execução de diferentes passos.
+	- Pipelining: Elementos de dados são encaminhados de uma etapa para outra na execução de diferentes passos.
 
-Task pool: A estrutura de dados armazena as tarefas a serem executadas.
+	- Task pool: A estrutura de dados armazena as tarefas a serem executadas.
 
-Produtor-consumidor: Este padrão considera duas atividades distintas e a transferência de dados dirigida do produtor para o consumidor.
+	- Produtor-consumidor: Este padrão considera duas atividades distintas e a transferência de dados dirigida do produtor para o consumidor.
 
 # Comunicação
 Modelos de passagem de mensagem:

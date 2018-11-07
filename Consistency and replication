@@ -1,0 +1,32 @@
+## Consistency and replication
+
+# Sequential consistency
+The result of any execution is the same as if the operations of all processes were executed in some sequential order, and the operations of each individual process appear in this sequence in the order specified by its program.
+
+# Causal consistency
+Writes that are potentially causally related must be seen by all processes in the same order. Concurrent writes may be seen in a different order by different processes.
+
+# Grouping operations
+
+Definition:
+	- Accesses to locks are sequentially consistent.
+	- No access to a lock is allowed to be performed until all previous writes have completed everywhere.
+	- No data access is allowed to be performed until all previous accesses to locks  have been performed..
+
+You don’t care that reads and writes of a series of operations are immediately known to other processes. You just want the effect of the series itself to be known.
+
+Observation: Entry consistency implies that we need to lock and unlock data (implicitly or not).
+
+# Consistency for mobile users
+The only thing you really want is that the entries you updated and/or read at A are in B the way you left them in A. in that case, the database will appear to be consistent to you.
+
+# Monotonic reads
+If a process reads the value of a data item x, any successive read operation on x by that process will always return that same or a more recent value.
+
+Definition:	A write operation by a process on a data item x is completed before any successive write operation on x by the same process.
+
+# Read your writes
+Definition: The effect of a write operation by a process on data item x, will always be seen by a successive read operation on x by the same process.
+
+# Writes follow reads
+Definition: A write operation by a process on a data item x following a previous read operation on x by the same process, is garanteed to take place on the same or a more recent value of x that was read.

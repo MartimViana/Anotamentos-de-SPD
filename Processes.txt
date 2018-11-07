@@ -1,0 +1,11 @@
+### DISTRIBUTED SYSTEMS
+## CHAPTER 03: PROCESSES
+
+Processor:	Provides a set of instructions along with the capability of automatically executing a series of tose instructions.
+			The minimal collection of values stored in the registers of a processor used for the execution of a series of instructions.
+
+Thread:	A minimal software processos in whose context a series of instructions can be executed.
+		The minimal collection of values stored in registers and memory, used for the execution of a series of instructions.
+
+Process:	A software processor in whose context one or more threads may be executed.
+

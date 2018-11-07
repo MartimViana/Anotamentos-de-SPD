@@ -1,0 +1,16 @@
+## FUNDAMENTOS DE SISTEMAS DISTRÍBUIDOS
+
+Sistema distribuído é um conjunto de componentes hardware e software interligados através de uma infraestrutura de comunicações, que cooperam e se coordenam entre si apenas pela troca de mensagens, para execução de aplicações distribuídas.
+
+# Transparência
+A transparência é a propriedade relativa a ocultar ao utilizador a separação física ou a diversidade dos elementos que compões um sistema distribuído.
+
+# Uma rede de computadores NÃO É UM SISTEMA DISTRIBUÍDO
+Uma rede de computadores é uma infrastrutura que liga um conjunto de computadores, atrávés de meios de comunicação de natureza e topologia diversas, usando um conjunto comum de protocolos de comunicação.
+
+Um sistema distribuído é um sistema composto por vários computadores, ligados numa rede, que executam processos que partilham um conjunto comum de protocolos distribuídos para apoiar a execução coerente de atividades distribuídas.
+
+# Paradigmas de distribuição
+difusão seletiva (multicast): Comunicação multiponto
+Difusão (broadcast): Todos os participantes são endereçados
+
