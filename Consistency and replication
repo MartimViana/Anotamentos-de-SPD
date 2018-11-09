@@ -30,3 +30,16 @@ Definition: The effect of a write operation by a process on data item x, will al
 
 # Writes follow reads
 Definition: A write operation by a process on a data item x following a previous read operation on x by the same process, is garanteed to take place on the same or a more recent value of x that was read.
+
+# Content distribution
+Consider only a client-server combination:
+		- Propagate only notification/invalidation of update.
+		- Passive replication: Transfer data from one copy to another.
+		- Active replication: Propagate the update operation to other copies.
+
+Note: No single approach is the best, but depends highy on available bandwith and read-to-write ratio at replicas.
+
+# Content distribution: Client/server system
+
+Pushing updates: Server-initiated approach, in which update is propagated regardless whether target asked for it
+Pulling updates: Client-initiated approach, in which client requests to be updated

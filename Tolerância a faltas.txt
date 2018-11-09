@@ -1,0 +1,27 @@
+## Tolerância a faltas
+Basics: A component provides services to clients. To provide services, the component may require the services from other components => a component may depend on some other component.
+
+# Availability A(t) of component C
+Average fraction of time that C has been up-and-running in interval [0, t).
+	-	Long-term availability A: A(∞)
+	-	Note: A = MTTF/MTBF = MTTF/(MTTF + MTTR)
+
+Obervation: Reliability and availability make sense only if we have an accurate notion of what a failure actually is.
+
+# Terminology
+Failure: 			A component is not living up to its specifications.
+Error:				Part of a component that can lead to a failure.
+Fault:				Cause of an error.
+Fault prevention:	Prevent the occurrence of a fault.
+Fault tolerance:	Build a component such that it can mask the occurrence of a fault.
+Fault removal:		Reduce the presence, number. or seriousness of a fault.
+Fault forecasting:	Estimate current presence, future incidence, and consequences of faults
+
+<h4>Types of failures</h4>
+Crash failure:		Halts, but is working correctly until it halts.
+Omission failure:	Fails to respond, recieve or send messages.
+Timing failures:	Response lies outside a specified time interval.
+Response failure:	Response is incorrect or wrong.
+Arbirtrary failure:	May produce arbitrary responses at arbitrary times.
+
+Arbitrary failures are sometimes qualified as <b>malicious</b>
