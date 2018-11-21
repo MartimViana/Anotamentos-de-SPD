@@ -1,0 +1,27 @@
+## Security
+# Introduction
+Objectivos de segurança: integridade, confidencialidade, disponibilidade.
+
+Confidentiatly refers to the propriety of a computer system whereby its information is disclosed only to authorized parties.
+Integrity is the characteristic that alterations to a systems assets can be made only in an authorized way.
+
+Sistemas monolíticos: Sistemas que não são paralelos nem distribuídos.
+
+# Security policy
+Security policy: Describes precissely which actions the entities in a system are allowed to take and which ones are prohibited.
+Security mechanisms:
+	- Encryption;
+	- Authentication;	
+	- Authorization;	
+	- Auditing.			(Auditoria)
+
+Trusted Computing Base (TCB): 
+	Set of all security mechanisms in a (distributed) computer system that are needed to enforce a security policy, and thus need to be trusted. The smaller the TCT, the better.
+
+# Secure channels
+Key Distribution Center (KDC):
+	shares a secret key with each of the hosts, but no pair of hosts is required to have a shared key as well.
+
+# Firewalls
+Packet-filtering gateway:
+	This type of firewall operates as a router and makes decisions as to whether or not to pass a network packet based on the source and destination address as contained in the packets header.
